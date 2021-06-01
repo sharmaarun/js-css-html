@@ -1,0 +1,65 @@
+body {
+  background-color: white;
+  color:black;
+  position: relative;
+  width:100vw;
+  height:100vh;
+}
+
+.window {
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
+  position: absolute;
+  border-radius:10px;
+  overflow : hidden;
+  left: 50px;
+  
+}
+
+.stats {
+  position:fixed;
+  top:10px;
+  right:10px;
+  background-color:rgba(0,0,0,0.1);
+  min-width:150px;
+  min-height:150px;
+  z-index:1000;
+}
+
+.window .title-bar {
+  display:flex;
+  padding:5px 10px;
+  background-color:lightblue;
+  color:black;
+  user-select:none;
+}
+
+.window .title-bar .title {
+  flex:1;
+}
+
+.window .title-bar .actions {
+  display:flex;
+}
+
+.window .title-bar .actions div{
+  width:20px;
+  height:20px;
+  background-color:tomato;
+  margin:0px 5px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-radius:100%;
+  cursor:pointer;
+}
+
+.window .title-bar .actions div:hover{
+  background-color: #F1F1F1;
+  color:black;
+}
+
+.window .win-body {
+  padding:10px;
+  min-width:200px;
+  min-height:150px;
+}
